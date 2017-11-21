@@ -90,7 +90,7 @@ int main(int argc, char* argv[]){
     		fwrite(fileContent, 1, chunkSize, fp);
     		fclose(fp);
     		printf("[+] File #%d/%d (%d bytes): %s\n", fileCounter, splitSize, chunkSize, filenameOUT);
-		}
+        }
     }
 
     return 0;
