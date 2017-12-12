@@ -87,9 +87,9 @@ int main(int argc, char* argv[]){
                continue;
             }
             if(fileCounter == splitSize) chunkSize -= remainderSize; // Adjust size for the last file
-    		fwrite(fileContent, 1, chunkSize, fp);
-    		fclose(fp);
-    		printf("[+] File #%d/%d (%d bytes): %s\n", fileCounter, splitSize, chunkSize, filenameOUT);
+            fwrite(fileContent, 1, chunkSize, fp);
+            fclose(fp);
+            printf("[+] File #%d/%d (%d bytes): %s\n", fileCounter, splitSize, chunkSize, filenameOUT);
         }
     }
 
